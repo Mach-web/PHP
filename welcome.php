@@ -1,11 +1,11 @@
 <?php
 // print
-echo "welcome to php scripting". "<br>";
+echo "welcome to php scripting". "<p>";
 
 // Variables
-$myname = "Mash"."<br>";
-echo $myname;
-echo var_dump($myname);
+$myname = "MachTechie";
+echo $myname."<br>";
+echo var_dump($myname)."<br>";
 
 // Arithmetic operations
 $sub1 = 3;
@@ -21,7 +21,7 @@ echo "<br>". "3 ** 4 = ".$sub1 ** $sub2;
 // can use the keyword const or define() to declare a constant
 // define(nameOfConstant, value, case-sensitivity)
 define('Ratio', 0.67);
-echo "<br>"."Constant Ratio: ".Ratio;
+echo "<p>"."Constant Ratio: ".Ratio;
 
 const ratio = 0.01;
 echo "<br>const ratio: ".ratio;
@@ -49,5 +49,4 @@ else{
     echo "<br>". "You have failed";
 }
 ?>
-
 
