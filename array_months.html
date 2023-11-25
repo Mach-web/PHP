@@ -9,13 +9,29 @@
         <button type="submit">Delete</button>
     </form>
     <?php
-    $months = array("January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "Dec>
+    $months = array("January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December");
     $month_del = $_POST['month_name'];
     // unset($months[month_del]);
     $months = array_diff($months, [$month_del]);
     print_r($months);
-    ?>
+    echo '<p>';
+    
+   $numbers = [22, 1, 2, 3, 4 , 5, 6];
+   echo("Original array values: ");
+   print_r($numbers);
+
+   array_push($numbers, 7, 8, 88, 9, 10, 11, 12);
+   echo("<p>New array values after push: ");
+   print_r($numbers);
+
+   unset($numbers[0]);
+   echo("<p>New array values after removing index[0]: ");
+   print_r($numbers);
+
+   $numbers = array_diff($numbers, ['88']);
+   echo("<p>New array values after removing by value(88): ");
+   print_r($numbers);
+?>
 </body>
 </html>
-
 
