@@ -1,0 +1,21 @@
+<html>
+<head>
+    <title>Array months</title>
+</head>
+<body Bgcolor = "Grey">
+     <h2>Enter month to be deleted: </h2>
+    <form name = "months" method = "POST">
+        <input type = "text" name = 'month_name' placeholder="Month Name">
+        <button type="submit">Delete</button>
+    </form>
+    <?php
+    $months = array("January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "Dec>
+    $month_del = $_POST['month_name'];
+    // unset($months[month_del]);
+    $months = array_diff($months, [$month_del]);
+    print_r($months);
+    ?>
+</body>
+</html>
+
+
