@@ -4,7 +4,9 @@ echo "welcome to php scripting". "<p>";
 
 // Variables
 $myname = "MachTechie";
+$number = 20;
 echo $myname."<br>";
+print $number."<br>";
 echo var_dump($myname)."<br>";
 
 // Arithmetic operations
